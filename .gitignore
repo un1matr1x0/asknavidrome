@@ -1,5 +1,7 @@
 __pycache__
+.env
 env
+.venv
 sphinx/_build/*
 !sphinx/_build/.gitkeep
 sphinx/resources/*.bkp
@@ -7,3 +9,5 @@ sphinx/resources/*.dtmp
 asknavidrome.log
 test.py
 NOTES.md
+uv.lock
+__pycache__
