@@ -1116,7 +1116,7 @@ class SystemExceptionHandler(AbstractExceptionHandler):
         if get_request_type(handler_input) == 'IntentRequest':
             logger.error(f'Intent Name Was: {get_intent_name(handler_input)}')
 
-        speech = sanitise_speech_output("Sorry, I didn't get that. Can you please say it again!!")
+        speech = sanitise_speech_output("Wie bitte?")
         handler_input.response_builder.speak(speech).ask(speech)
 
         return handler_input.response_builder.response
@@ -1142,7 +1142,7 @@ class GeneralExceptionHandler(AbstractExceptionHandler):
         if get_request_type(handler_input) == 'IntentRequest':
             logger.error(f'Intent Name Was: {get_intent_name(handler_input)}')
 
-        speech = sanitise_speech_output("Sorry, I didn't get that. Can you please say it again!!")
+        speech = sanitise_speech_output("Wie bitte?")
         handler_input.response_builder.speak(speech).ask(speech)
 
         return handler_input.response_builder.response
