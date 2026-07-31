@@ -159,7 +159,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         logger.debug('In LaunchRequestHandler')
 
         connection.ping()
-        speech = sanitise_speech_output('Ready!')
+        speech = sanitise_speech_output('Bin bereit')
 
         handler_input.response_builder.speak(speech).ask(speech)
         return handler_input.response_builder.response
